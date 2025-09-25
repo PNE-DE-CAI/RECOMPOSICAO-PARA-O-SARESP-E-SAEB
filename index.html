@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URE CAIEIRAS - Recomposição de Aprendizagem SAEB/SARESP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #e63946 0%, #1d3557 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 32px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background: #e63946;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.ibb.co/dscRg9Ms/LOGO-URE-CAIEIRAS-2-1.png" alt="LOGO-URE-CAIEIRAS-2-1" class="h-12 mr-3">
+                <img src="https://i.ibb.co/1YH8PpM0/Imagem345454.jpg" alt="Imagem345454" class="h-12 mr-3">
+                <img src="https://i.ibb.co/N2nz2dFP/Imagem22525.jpg" alt="Logo URE Caieiras" class="h-12 mr-3">
+                               <h1 class="text-xl font-bold text-gray-800">URE-CAIEIRAS</h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#sobre" class="text-gray-700 hover:text-red-600 font-medium">Sobre</a>
+                <a href="#equipes" class="text-gray-700 hover:text-red-600 font-medium">Equipes</a>
+                <a href="#etapas" class="text-gray-700 hover:text-red-600 font-medium">Etapas</a>
+                <a href="#diad" class="text-gray-700 hover:text-red-600 font-medium">Dia D</a>
+                <a href="#paulistao" class="text-gray-700 hover:text-red-600 font-medium">Paulistão SARESP</a>
+                <a href="#roteiro" class="text-gray-700 hover:text-red-600 font-medium">Roteiro Aplicação</a>
+                <a href="#materiais" class="text-gray-700 hover:text-red-600 font-medium">Materiais</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#sobre" class="block py-2 text-gray-700 hover:text-red-600">Sobre</a>
+            <a href="#equipes" class="block py-2 text-gray-700 hover:text-red-600">Equipes</a>
+            <a href="#etapas" class="block py-2 text-gray-700 hover:text-red-600">Etapas</a>
+            <a href="#diad" class="block py-2 text-gray-700 hover:text-red-600">Dia D</a>
+            <a href="#paulistao" class="block py-2 text-gray-700 hover:text-red-600">Paulistão SARESP</a>
+            <a href="#roteiro" class="block py-2 text-gray-700 hover:text-red-600">Roteiro Aplicação</a>
+            <a href="#materiais" class="block py-2 text-gray-700 hover:text-red-600">Materiais</a>
+        </div>
+    </header>
+
+    <section class="hero-bg text-white py-16 md:py-24">
+        
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+            
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Conjunto de Ações para Recomposição de Aprendizagem</h1>
+            
+            <p class="text-xl md:text-2xl mb-8">SAEB/SARESP - URE CAIEIRAS</p>
+            <a href="#sobre" class="bg-white text-red-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">
+                Saiba Mais
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre o Projeto</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    O projeto tem como objetivo principal apresentar a proposta do DIA D – SAEB e Paulistão SARESP, 
+                    alinhando procedimentos pedagógicos e responsabilidades da coordenação e dos docentes.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md card-hover transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="target" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Objetivos</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 mt-1 mr-2 text-red-600"></i>
+                            <span>Apresentar a proposta do DIA D – SAEB e Paulistão SARESP.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 mt-1 mr-2 text-red-600"></i>
+                            <span>Alinhamento pedagógico e corresponsabilidades.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 mt-1 mr-2 text-red-600"></i>
+                            <span>Discutir estratégias de engajamento de professores e alunos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 mt-1 mr-2 text-red-600"></i>
+                            <span>Relacionar as ações do DIA D com o currículo e avaliações externas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 mt-1 mr-2 text-red-600"></i>
+                            <span>Orientar sobre formas de acompanhamento e registro das atividades.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-lg shadow-md card-hover transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-red-600 mb-4">
+                        <i data-feather="calendar" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">DIA D - SAEB</h3>
+                    <p class="text-gray-600 mb-3">
+                        Foco nos alunos do 5º, 9º Anos e 3ª Série, com atividades entre 6 a 10 de outubro.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="clock" class="w-4 h-4 mt-1 mr-2 text-blue-600"></i>
+                            <span>1 a 2 aulas de duração</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md card-hover transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="award" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Paulistão SARESP</h3>
+                    <p class="text-gray-600 mb-3">
+                        Atividades gamificadas para 2º, 6º, 7º, 8º Anos e 1ª e 2ª Séries.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 mt-1 mr-2 text-red-600"></i>
+                            <span>Questões baseadas na matriz SARESP</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="w-4 h-4 mt-1 mr-2 text-red-600"></i>
+                            <span>Atividades com a menor taxa de acerto nas Provas Paulista</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipes" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossas Equipes</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Conheça as equipes responsáveis pela implementação das ações de recomposição de aprendizagem.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i data-feather="users" class="w-6 h-6 mr-2 text-red-600"></i>
+                        Equipe Especialista em Currículo (EEC)
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">Meire</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">Denise</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">Miro</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">Tiago</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">Marcos</span>
+                        </div>
+                          <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">Isabel</span>
+                        </div>
+                          <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            
+                            <span class="text-gray-700">Marcia</span>
+                        </div>
+                    
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">Katia</span>
+                        </div>
+                          <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-red-600"></i>
+                            </div>
+                            <span class="text-gray-700">Paula</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i data-feather="users" class="w-6 h-6 mr-2 text-blue-600"></i>
+                        Equipe CGP/CGPG
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">William Freire</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">Bruno Tonellotti</span>
+                        </div>
+                          <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">Juliana</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">Bruno</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">Katia Matiazzo</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">Anderson</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-2">
+                                <i data-feather="user" class="w-4 h-4 text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">Daniel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapas" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Etapas do Projeto</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Cronograma detalhado das ações para implementação da recomposição de aprendizagem.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <div class="space-y-8">
+                    <div class="flex items-start timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-red-600 rounded-full p-2 flex-shrink-0 mr-4 relative z-10">
+                            <i data-feather="flag" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Etapa 1 - 22/09 a 23/09/25</h3>
+                            <p class="text-gray-600 mb-2">
+                                Apresentação do Dia D SAEB e Paulistão SARESP para os PEC.
+                            </p>
+                            <p class="text-gray-600 font-medium">
+                                Foco: Levantamento das habilidades fragilizadas por componentes/ano/série/escolas/segmentos e elaboração das questões com base na Prova Paulista
+                            </p>
+                            <div class="mt-3">
+                                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">EEC - Todas as áreas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-blue-600 rounded-full p-2 flex-shrink-0 mr-4 relative z-10">
+                            <i data-feather="users" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Etapa 2 - 26/09/2025</h3>
+                            <p class="text-gray-600 mb-2">
+                                Reunião presencial com os CGP e CGPG que fazem parte do grupo de estudos.
+                            </p>
+                            <p class="text-gray-600 font-medium">
+                                Foco: Sistematização do plano de ação e regulamento
+                            </p>
+                            <div class="mt-3">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">CGP e CGPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-red-600 rounded-full p-2 flex-shrink-0 mr-4 relative z-10">
+                            <i data-feather="edit" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Etapa 3 - 29/09/2025</h3>
+                            <p class="text-gray-600 mb-2">
+                                Reunião presencial com os CGP e CGPG: um representante por U.E.
+                            </p>
+                            <p class="text-gray-600 font-medium">
+                                Foco: Apresentação do projeto, sistematização do plano de ação e regulamento.
+                            </p>
+                            <div class="mt-3">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">CGP e CGPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bg-blue-600 rounded-full p-2 flex-shrink-0 mr-4 relative z-10">
+                            <i data-feather="book" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Etapa 4 - Semana de 30/9 a 03/10/2025</h3>
+                            <p class="text-gray-600 mb-2">
+                                CGP e CGPG – Apresentação do plano à escola – ATPC/ATPCG
+                            </p>
+                            <p class="text-gray-600 font-medium">
+                                Foco: Organização das ações – etapa da escola – desenvolver as habilidades fragilizadas (âmbito URE) uso dos cards (enviados pela EEC) e construção desse ambiente (land_page)
+                            </p>
+                            <div class="mt-3">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">CGP e CGPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start timeline-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="bg-red-600 rounded-full p-2 flex-shrink-0 mr-4 relative z-10">
+                            <i data-feather="edit" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Etapa 5 - 06/10 a 10/10/2025</h3>
+                            <p class="text-gray-600 mb-2">
+                                Aplicação Atividade Gamificada - Dia D SAEB; Paulistão SARESP (2 questões por componente) <b>Público:</b> <i>2º, 6º, 7º, 8º Anos; 1ª e 2ª Séries</i>
+                            </p>
+                            <p class="text-gray-600 font-medium">
+                                Foco: Questões elaboradas para checagem dos resultados por unidade/escola 
+                                <i> Observação: Esta etapa será realizada concomitante ao dia D do SAEB</i>
+                                
+                            </p>
+                            <div class="mt-3">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">CGP e CGPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start" data-aos="fade-up" data-aos-delay="600">
+                        <div class="bg-blue-600 rounded-full p-2 flex-shrink-0 mr-4 relative z-10">
+                            <i data-feather="clipboard" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Etapa 6 - 06/10 a 24/10/2025</h3>
+                            <p class="text-gray-600 mb-2">
+                                Coleta e Consolidação evidências e escolhas das boas práticas
+                            </p>
+                            <p class="text-gray-600 font-medium">
+                                Foco: Ferramenta a definir
+                            </p>
+                            <div class="mt-3">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">CGP, CGPG, Professor e EEC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diad" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Dia D da Recomposição</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Marco da Jornada 90 Dias SAEB, acontecendo em um tempo de 1 a 2 aulas entre 6 a 10 de outubro.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">O que é o Dia D?</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                <span>Marco da Jornada 90 Dias SAEB</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                <span>Acontecerá em um tempo de 1 a 2 aulas entre 6 a 10 de outubro</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                <span>No 2º semestre tem como foco destacar a evolução dos estudantes e reforçar a confiança de todos no caminho percorrido até aqui</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Objetivos do Dia D</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-feather="award" class="w-6 h-6 text-red-600"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">Valorizar conquistas individuais e coletivas</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-feather="heart" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">Reforçar confiança e engajamento para o SAEB</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-feather="users" class="w-6 h-6 text-red-600"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">Integrar aprendizagem e convivência positiva</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-feather="home" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">Mobilizar comunidade escolar e famílias</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-red-600 text-white p-8">
+                        <h3 class="text-xl font-bold mb-4">Preparação para o Dia D</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 text-white mr-2 mt-0.5"></i>
+                                <span>Reunir e sistematizar os resultados comparativos entre o Simulado SAEB I e SAEB II</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 text-white mr-2 mt-0.5"></i>
+                                <span>Identificar os estudantes que mais evoluíram em cada turma</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 text-white mr-2 mt-0.5"></i>
+                                <span>Preparação de uma fala motivadora por parte da gestão escolar</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 text-white mr-2 mt-0.5"></i>
+                                <span>Elaborar convite especial para famílias e comunidade</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="w-5 h-5 text-white mr-2 mt-0.5"></i>
+                                <span>Criar um ambiente acolhedor, motivador e festivo</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-blue-600 text-white p-8">
+                        <h3 class="text-xl font-bold mb-4">Estrutura do Dia D</h3>
+                        <ol class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="bg-white text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                                <span>Acolhimento e fala motivacional</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-white text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                                <span>Compartilhamento dos avanços da escola e turmas</span>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="bg-white text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                                <span>Premiações e reconhecimento</span>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="bg-white text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">4</span>
+                                <span>Atividade de Engajamento e Desafio Final</span>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="bg-white text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">5</span>
+                                <span>Encerramento e Mobilização para o SAEB</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="diad" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+        <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Roteiro Detalhado: Dia D da Recomposição</h2>
+        <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+        <p class="text-gray-600 max-w-3xl mx-auto">
+        Foco em reconhecimento e motivação para os estudantes do 5º e 9º Anos e 3ª Série. Tempo total sugerido: 50 a 100 minutos (1 a 2 aulas).
+        </p>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-xl p-6 mb-12" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                <i data-feather="check-square" class="w-6 h-6 mr-2 text-red-600"></i> Organização Antes do Dia D
+            </h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-red-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Horário / Prazo</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ação</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Responsáveis</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até 1 semana antes</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Compilar resultados dos Simulados SAEB I e II (gráficos, tabelas, painéis).</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Equipe Gestora / Coordenação Pedagógica</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até 1 semana antes</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Identificar estudantes com maior evolução em cada turma.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Professores das turmas / Coordenação</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até 5 dias antes</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Preparar convites para famílias, professores e comunidade escolar (bilhetes, redes sociais, murais).</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Direção / Equipe de Comunicação / Grêmio Estudantil</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até 3 dias antes</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Ensaiar fala motivadora de abertura e de encerramento.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Diretor(a) / Vice / Coordenadores</td>
+                        </tr>
+                        <tr class="bg-red-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Véspera</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Organizar ambiente: cartazes motivacionais, música de recepção, materiais de certificados, som/projeção.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Equipe de Apoio / Professores / Alunos monitores</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-xl p-6 mb-12" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                <i data-feather="clock" class="w-6 h-6 mr-2 text-blue-600"></i> Aplicação – Durante o Dia D
+            </h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-blue-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Horário (Minutos)</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Etapa</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ação</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Responsáveis</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Recepção (5 min)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Criar clima positivo</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Música motivacional, cartões com frases positivas.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Professores de apoio / Alunos monitores</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Abertura (10 min)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Fala motivadora e acolhimento</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Discurso da gestão valorizando conquistas e união.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Diretor / Vice</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Apresentação de Resultados (15-20 min)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Mostrar evolução entre simulados</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Projeção de gráficos, destaques das turmas.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Coordenação / Professor responsável por dados</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Reconhecimento de Destaques (15 min)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Entrega de certificados para alunos que mais evoluíram</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Ação simbólica de premiação.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Coordenação / Professores de cada turma</td>
+                        </tr>
+                        <tr class="bg-blue-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Compromisso Coletivo (10-15 min)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Gesto simbólico</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Grito de guerra ou leitura de frase motivadora.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Diretor(a) / Professores líderes / Grêmio Estudantil</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-xl p-6" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                <i data-feather="send" class="w-6 h-6 mr-2 text-red-600"></i> Ações Após o Dia D
+            </h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-red-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Prazo</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ação</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Responsáveis</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Imediato (próximo dia letivo)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Registrar o evento com fotos, ata ou relatório para arquivo da escola.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Equipe Gestora</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até 2 dias</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Compartilhar nas redes sociais ou murais internos as fotos e principais mensagens do Dia D.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Equipe de Comunicação / Grêmio Estudantil</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até 1 semana</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Reunir professores para avaliar engajamento e ajustar estratégias para o SAEB.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Coordenação Pedagógica / Corpo Docente</td>
+                        </tr>
+                        <tr class="bg-red-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Até o SAEB</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Acompanhar motivação dos estudantes e reforçar mensagens de apoio nas aulas.</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Professores / Direção</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        </div>
+        </section>
+        
+        <section id="paulistao" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">O que é o Paulistão SARESP?</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    O Paulistão SARESP é mais que uma avaliação. É um momento de preparação, reflexão e aprimoramento. Uma oportunidade para transformar resultados em planos de ação pedagógica.
+                </p>
+            </div>
+        
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md card-hover transition duration-300" data-aos="fade-right">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i data-feather="settings" class="w-6 h-6 mr-2 text-blue-600"></i> Como Vai Funcionar?
+                    </h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="chevrons-right" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                            <span>Aplicação de atividades **gamificadas** com perguntas e respostas coletivas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="chevrons-right" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                            <span>Questões baseadas na **Matriz de Referência do SARESP** com foco nas habilidades fragilizadas da Prova Paulista do 2º bimestre.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="chevrons-right" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                            <span>Correção e análise rápida dos resultados.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="chevrons-right" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                            <span>Devolutiva pedagógica pelos professores.</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="bg-red-50 p-6 rounded-lg shadow-md card-hover transition duration-300" data-aos="fade-left">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i data-feather="award" class="w-6 h-6 mr-2 text-red-600"></i> Benefícios
+                    </h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="thumbs-up" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                            <span>Maior segurança dos estudantes no dia da prova.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="thumbs-up" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                            <span>Apoio aos professores no planejamento pedagógico.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="thumbs-up" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                            <span>Fortalecimento do compromisso com a qualidade da educação.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <section id="roteiro" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Roteiro – Dia D – Aplicação SAEB/Paulistão SARESP</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Cronograma e responsáveis para a aplicação das atividades de recomposição.
+                </p>
+            </div>
+        
+            <div class="bg-white rounded-lg shadow-xl p-6 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i data-feather="calendar" class="w-6 h-6 mr-2 text-red-600"></i> Antes do Dia 'D'
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-red-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Etapa</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Responsável</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Prazo</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-500">Definir a data do Dia 'D'</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Direção</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-500">Reorganizar horários das aulas</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Coordenação Pedagógica</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-500">Impressão de gabaritos e Atividades (SAEB)</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Coordenação Pedagógica</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-500">Preparar salas com TV/projetor (Paulistão Saresp)</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Equipe de apoio/ PROATI</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-500">Definir professores Aplicadores acompanhantes de turma</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Direção + Coordenação</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-500">Entregar resoluções comentadas aos professores</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Coordenação Pedagógica</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-500">Orientar professores sobre devolutiva e metodologia em ATPC</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Coordenação Pedagógica</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-500">Organização do lanche e intervalo</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Equipe de Apoio/Merenda</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                            <tr class="bg-red-50">
+                                <td class="px-6 py-4 text-sm font-bold text-gray-900">Preparar lanche especial (Caso houver)</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Equipe de Merenda</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Até ___/___</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+            <div class="bg-white rounded-lg shadow-xl p-6 mb-12" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i data-feather="clock" class="w-6 h-6 mr-2 text-blue-600"></i> No Dia 'D'
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-blue-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Horário</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Atividade</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Responsável</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">07h00</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Abertura oficial com fala do(a) Diretor(a)</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Direção</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">07h45</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Orientações iniciais às turmas</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Coordenação + Professores acompanhantes</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">08h00</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Início da aplicação das atividades/provas</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Professores responsáveis</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">09h30</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Intervalo/Lanche</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Equipe de Merenda + Apoio</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">10h00</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Retomada das atividades</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Professores responsáveis</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">11h30</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Encerramento das atividades</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Coordenação Pedagógica</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">11h45</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Devolutiva sobre a importância das avaliações externas</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Direção + Coordenação</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+            <div class="bg-white rounded-lg shadow-xl p-6" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i data-feather="edit" class="w-6 h-6 mr-2 text-red-600"></i> Etapa de Aplicação (SAEB/Paulistão SARESP)
+                </h3>
+                <p class="text-sm text-gray-600 mb-4">Público-alvo: 9º Ano e 3ª Série (SAEB); 2º, 6º, 7º, 8º Anos e 1ª e 2ª Séries (Paulistão SARESP). Duração total prevista: 100 minutos.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-red-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Horário</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Duração</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Atividade</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Responsável</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">07h30 – 08h35</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">5 min</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Orientações iniciais e distribuição de gabaritos.</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Professores aplicadores</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">08h35 – 08h55</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">20 min</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Entrega das atividades e início da resolução das questões.</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Professores aplicadores</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">08h55 – 09h00</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">5 min</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Preenchimento do gabarito.</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Professores aplicadores</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">09h00 – 09h10</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">10 min</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Troca de gabaritos para correção cruzada.</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Professores aplicadores / Monitores</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">09h10 – 09h25</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">15 min</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Resolução comentada em sala.</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Professores de Língua Portuguesa e Matemática</td>
+                            </tr>
+                            <tr class="bg-red-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">09h25 – 09h40</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Coleta de gabaritos, organização e envio à coordenação.</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Professores aplicadores</td>
+                            </tr>
+                            <tr class="bg-red-50">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">09h40 – 09h50</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Feedback rápido e encerramento.</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Trio Gestor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">Observações Importantes:</h4>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li>Ajuste os horários de início conforme o período (manhã/tarde).</li>
+                        <li>Garanta que os professores aplicadores tenham lista de presença e canetas para conferência.</li>
+                        <li>Separe uma equipe de apoio para eventuais problemas técnicos ou necessidades dos estudantes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+    <section id="materiais" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Materiais e Recursos 🚀</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Acesse os documentos de apoio, apresentações e *templates* para a implementação das ações em sua Unidade Escolar.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-red-50 p-6 rounded-lg shadow-md card-hover transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-red-600 mb-4">
+                        <i data-feather="file-text" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Apresentações EEC</h3>
+                    <p class="text-gray-600 mb-4">
+                        Slides utilizados nas reuniões de alinhamento e ATPC.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-red-600 hover:text-red-800 font-medium">
+                        Baixar Slides <i data-feather="download" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md card-hover transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="clipboard" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Plano de Ação Modelo</h3>
+                    <p class="text-gray-600 mb-4">
+                        *Template* para sistematização do planejamento de recomposição na U.E.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        Acessar Documento <i data-feather="external-link" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-lg shadow-md card-hover transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-red-600 mb-4">
+                        <i data-feather="grid" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Cards das Habilidades Fragilizadas</h3>
+                    <p class="text-gray-600 mb-4">
+                        Materiais focados nas habilidades com menor índice de acerto.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-red-600 hover:text-red-800 font-medium">
+                        Ver Materiais <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 URE CAIEIRAS - Recomposição de Aprendizagem. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Desenvolvido pela Equipe de Especialistas em Currículo e CGP/CGPG.</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        // Inicializa AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Inicializa Feather Icons
+        feather.replace();
+
+        // Funcionalidade do Menu Mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-feather', 'menu');
+            } else {
+                icon.setAttribute('data-feather', 'x');
+            }
+            feather.replace();
+        });
+        
+        // Esconde o menu mobile ao clicar em um link (para navegação suave)
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.querySelector('i').setAttribute('data-feather', 'menu');
+                feather.replace();
+            });
+        });
+    </script>
+</body>
+</html>
