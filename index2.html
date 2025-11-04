@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAULISTÃO SARESP - Volume II</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        
+        .subject-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #1e3a8a;
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .download-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .grade-tab {
+            transition: all 0.3s ease;
+        }
+        
+        .grade-tab.active {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        /* Adiciona estilo para esconder as abas não ativas */
+        .grade-content {
+            display: none;
+        }
+
+        /* Torna o conteúdo ativo visível */
+        .grade-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="https://i.ibb.co/N2nz2dFP/Imagem22525.jpg" alt="Logo PAULISTÃO SARESP" class="h-16 mr-4">
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold">PAULISTÃO SARESP</h1>
+                        <p class="text-sm md:text-base">Volume II - Novembro</p>
+                    </div>
+                </div>
+                <img src="https://i.ibb.co/dscRg9Ms/LOGO-URE-CAIEIRAS-2-1.png" alt="Banner URE Caieiras" class="h-20">
+            </div>
+        </div>
+    </header>
+
+    <section class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Conteúdos Fragilizados no 3° Bimestre</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Materiais focados nas disciplinas com menores índices de acerto nas provas do SARESP</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white text-blue-800 px-4 py-2 rounded-full font-medium">Matemática</span>
+                <span class="bg-white text-blue-800 px-4 py-2 rounded-full font-medium">Língua Inglesa</span>
+                <span class="bg-white text-blue-800 px-4 py-2 rounded-full font-medium">Geografia</span>
+                <span class="bg-white text-blue-800 px-4 py-2 rounded-full font-medium">Língua Portuguesa</span>
+                <span class="bg-white text-blue-800 px-4 py-2 rounded-full font-medium">História</span>
+                <span class="bg-white text-blue-800 px-4 py-2 rounded-full font-medium">Ciências</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-6">Sobre o Volume II</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-gray-700 mb-4">Este material foi desenvolvido com base nos conteúdos que apresentaram os menores índices de acerto nas provas do SARESP do 3° bimestre, identificados por disciplina em nível de URE.</p>
+                        <p class="text-gray-700 mb-4">O objetivo é fortalecer o aprendizado nas áreas mais críticas, proporcionando aos estudantes melhores condições para enfrentar os desafios das avaliações.</p>
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                            <p class="text-blue-800 font-medium">"Foco nos conteúdos que mais precisam de atenção para melhorar o desempenho geral dos alunos."</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="https://i.ibb.co/N2nz2dFP/Imagem22525.jpg" alt="Ilustração educacional" class="h-64 floating">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 text-center">Disciplinas Abordadas</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-blue-800 text-white p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-square-root-alt text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Matemática</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Conteúdos com maior dificuldade identificados nas avaliações do 3° bimestre.</p>
+                        <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                            <li>Geometria espacial</li>
+                            <li>Álgebra básica</li>
+                            <li>Resolução de problemas</li>
+                            <li>Frações e porcentagens</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-blue-800 text-white p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-language text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Língua Inglesa</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Áreas de maior fragilidade no aprendizado do idioma.</p>
+                        <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                            <li>Interpretação de textos</li>
+                            <li>Vocabulário específico</li>
+                            <li>Estruturas gramaticais</li>
+                            <li>Compreensão auditiva</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-blue-800 text-white p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-globe-americas text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Geografia</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Temas geográficos com menor desempenho nas avaliações.</p>
+                        <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                            <li>Cartografia</li>
+                            <li>Geografia humana</li>
+                            <li>Questões ambientais</li>
+                            <li>Geografia econômica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-blue-800 text-white p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-book-open text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Língua Portuguesa</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Habilidades linguísticas que necessitam de reforço.</p>
+                        <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                            <li>Interpretação textual</li>
+                            <li>Gramática aplicada</li>
+                            <li>Produção de textos</li>
+                            <li>Literatura</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-blue-800 text-white p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-landmark text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold">História</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Períodos históricos com maior dificuldade de compreensão.</p>
+                        <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                            <li>História do Brasil</li>
+                            <li>História contemporânea</li>
+                            <li>Processos históricos</li>
+                            <li>Análise de fontes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-blue-800 text-white p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-flask text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Ciências</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Conceitos científicos que apresentaram maior desafio.</p>
+                        <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                            <li>Biologia celular</li>
+                            <li>Física básica</li>
+                            <li>Química aplicada</li>
+                            <li>Ecologia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 text-center">Materiais Disponíveis</h2>
+            
+            <div class="flex flex-wrap justify-center mb-8 gap-2">
+                <button onclick="showGrade('grade6')" class="grade-tab active bg-blue-100 text-blue-800 px-6 py-2 rounded-lg font-medium">6° Ano</button>
+                <button onclick="showGrade('grade7')" class="grade-tab bg-blue-100 text-blue-800 px-6 py-2 rounded-lg font-medium">7° Ano</button>
+                <button onclick="showGrade('grade8')" class="grade-tab bg-blue-100 text-blue-800 px-6 py-2 rounded-lg font-medium">8° Ano</button>
+                <button onclick="showGrade('grade9')" class="grade-tab bg-blue-100 text-blue-800 px-6 py-2 rounded-lg font-medium">9° Ano</button>
+            </div>
+            
+            <div id="grade6" class="grade-content active">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                    <div class="bg-blue-800 text-white p-4">
+                        <h3 class="text-xl font-bold">6° Ano</h3>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-2 gap-6">
+                        <div class="download-btn bg-gray-100 hover:bg-gray-200 rounded-lg p-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-powerpoint text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Versão PowerPoint</h4>
+                                    <p class="text-sm text-gray-600">Apresentação interativa</p>
+                                </div>
+                            </div>
+                            <a href="https://seducsp-my.sharepoint.com/:p:/g/personal/valdomirosousa_professor_educacao_sp_gov_br/ERlmoCLkJEZOnMgzaHBxSK4Bt56WKoI87gQX8IltSLNChQ?e=uboLEu" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Baixar <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
+                        <div class="download-btn bg-gray-100 hover:bg-gray-200 rounded-lg p-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-pdf text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Versão PDF</h4>
+                                    <p class="text-sm text-gray-600">Documento para impressão</p>
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1AxyhJzukWKqqb44nFm632TH0G82ZeTuD/view?usp=drive_link" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Baixar <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="grade7" class="grade-content">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                    <div class="bg-blue-800 text-white p-4">
+                        <h3 class="text-xl font-bold">7° Ano</h3>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-2 gap-6">
+                        <div class="download-btn bg-gray-100 hover:bg-gray-200 rounded-lg p-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-powerpoint text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Versão PowerPoint</h4>
+                                    <p class="text-sm text-gray-600">Conteúdo do 7° ano</p>
+                                </div>
+                            </div>
+                            <a href="https://seducsp-my.sharepoint.com/:p:/g/personal/valdomirosousa_professor_educacao_sp_gov_br/EWQTA9XtqINDsKx7soVacmABeuMwOrzCcSlyfqDwAQJxbQ?e=PrQtrw 
+                            " target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Baixar <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
+                        <div class="download-btn bg-gray-100 hover:bg-gray-200 rounded-lg p-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-pdf text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Versão PDF</h4>
+                                    <p class="text-sm text-gray-600">Conteúdo do 7° ano</p>
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1efOK12VeIXLTTL0312jH_hpZUBp8XZb_/view?usp=drive_link 
+                            " target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Baixar <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grade8" class="grade-content">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                    <div class="bg-blue-800 text-white p-4">
+                        <h3 class="text-xl font-bold">8° Ano</h3>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-2 gap-6">
+                        <div class="download-btn bg-gray-100 hover:bg-gray-200 rounded-lg p-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-powerpoint text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Versão PowerPoint</h4>
+                                    <p class="text-sm text-gray-600">Conteúdo do 8° ano</p>
+                                </div>
+                            </div>
+                            <a href="https://seducsp-my.sharepoint.com/:p:/g/personal/valdomirosousa_professor_educacao_sp_gov_br/EQotWBxnJhpFmz1erGtgJecBPPsxiGoTTHuc8Vvu4gZG3w?e=hX6dnC 
+                            " target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Baixar <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
+                        <div class="download-btn bg-gray-100 hover:bg-gray-200 rounded-lg p-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-pdf text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Versão PDF</h4>
+                                    <p class="text-sm text-gray-600">Conteúdo do 8° ano</p>
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1bc1PDuKt-xTdx9mSdvwO1Bi4UhTVIjdt/view?usp=drive_link" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Baixar <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grade9" class="grade-content">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                    <div class="bg-blue-800 text-white p-4">
+                        <h3 class="text-xl font-bold">9° Ano</h3>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-2 gap-6">
+                        <div class="download-btn bg-gray-100 hover:bg-gray-200 rounded-lg p-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-powerpoint text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Versão PowerPoint</h4>
+                                    <p class="text-sm text-gray-600">Conteúdo do 9° ano</p>
+                                </div>
+                            </div>
+                            <a href="https://seducsp-my.sharepoint.com/:p:/g/personal/valdomirosousa_professor_educacao_sp_gov_br/Ecca9aF3psRAqTuMynubpdkBI3j8pTFwjKLpedMJfA_nbg?e=FJe6vo" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Baixar <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
+                        <div class="download-btn bg-gray-100 hover:bg-gray-200 rounded-lg p-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-pdf text-red-500 text-3xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Versão PDF</h4>
+                                    <p class="text-sm text-gray-600">Conteúdo do 9° ano</p>
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1z9dARZ1ObuezXOZJUokhe0-S62mbM41X/view?usp=drive_link" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Baixar <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2023 PAULISTÃO SARESP - Volume II. Desenvolvido pela URE Caieiras.</p>
+            <p class="mt-2 text-gray-400">Dados baseados em resultados do SARESP do 3° Bimestre.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Função para mostrar o conteúdo da série (ano) selecionada
+        function showGrade(gradeId) {
+            // Remove a classe 'active' de todos os conteúdos e abas
+            document.querySelectorAll('.grade-content').forEach(div => {
+                div.classList.remove('active');
+            });
+            document.querySelectorAll('.grade-tab').forEach(button => {
+                button.classList.remove('active');
+                button.classList.add('bg-blue-100', 'text-blue-800'); // Garante estilo inativo
+                button.classList.remove('bg-blue-800', 'text-white'); // Remove estilo ativo
+            });
+
+            // Adiciona a classe 'active' ao conteúdo da série correspondente
+            const activeContent = document.getElementById(gradeId);
+            if (activeContent) {
+                activeContent.classList.add('active');
+            }
+
+            // Adiciona a classe 'active' à aba (botão) clicada
+            const activeButton = document.querySelector(`.grade-tab[onclick="showGrade('${gradeId}')"]`);
+            if (activeButton) {
+                activeButton.classList.add('active');
+                activeButton.classList.remove('bg-blue-100', 'text-blue-800'); // Remove estilo inativo
+                activeButton.classList.add('bg-blue-800', 'text-white'); // Adiciona estilo ativo
+            }
+        }
+        
+        // Garante que o 6° ano esteja ativo na carga inicial (já está no HTML, mas é bom garantir a função)
+        document.addEventListener('DOMContentLoaded', () => {
+            showGrade('grade6');
+        });
+    </script>
+</body>
+</html>
